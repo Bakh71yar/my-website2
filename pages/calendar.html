@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Calendar API Quickstart</title>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <body class="bg-gray-100">
+        <div class="container mx-auto p-6 ">
+          <h1 class="text-3xl font-bold mb-6 text-center">AI Schedule Creator</h1>
+          <form id="scheduleForm" class="bg-white p-6 rounded shadow-md">
+            
+            <label for="userInput" class="block text-lg font-medium mb-2">Enter your schedule requirements:</label>
+            <textarea id="userInput" class="w-full p-2 border border-gray-300 rounded mb-4" rows="4" placeholder="Describe your schedule..."></textarea>
+            <div class = "flex"> <button type="button" class="bg-blue-500 text-white py-2 px-4 rounded" onclick="createSchedule()">Create Schedule</button>
+                <button
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center focus:outline-none focus:shadow-outline ml-20"
+                type="button"
+                id="google-signin-button authorize_button" onclick = "handleAuthClick()"
+              >
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="google logo"
+                  class="w-6 h-5 mr-2"
+                />
+    
+                Authorize
+              </button>
+              <a href="index.html" id="signout_button" class = "bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center focus:outline-none focus:shadow-outline ml-20 " onclick="handleSignoutClick()">Sign Out</a>
+
+            </div>
+          </form>
+          
+          <div id="scheduleOutput" class="mt-6"></div>
+
+        </div>
+    
+    <script src="./../script/calendar.js"></script>
+    <script
+      async
+      defer
+      src="https://apis.google.com/js/api.js"
+      onload="gapiLoaded()"
+    ></script>
+    <script
+      async
+      defer
+      src="https://accounts.google.com/gsi/client"
+      onload="gisLoaded()"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dopamine Helper</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Dopamine helper</title>
+      </head>
+      <body>
+        <header class="mb-10">
+          <nav
+            class="bg-blue border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
+          >
+            <div
+              class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+            >
+              <span
+                class="self-center text-xl font-semibold whitespace-nowrap text-white dark:text-white"
+                >RNT</span
+              >
+              <div class="flex items-center lg:order-2">
+                <div
+                  class="relative flex items-center"
+                  data-twe-input-wrapper-init
+                  data-twe-input-group-ref
+                >
+                  <input
+                    type="search"
+                    class="animate__animated animate__fadeInDown peer block min-h-[auto] text-black rounded border-0 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+                    placeholder="Search"
+                    aria-label="Search"
+                    id="search-focus"
+                    aria-describedby="basic-addon4"
+                  />
+                  <label
+                    for="search-focus"
+                    class="animate__animated animate__fadeInDown pointer-events-none absolute textleft-3 top-0 mb-0 mr-5 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+                    >Search
+                  </label>
+                  <button
+                    class="animate__animated animate__fadeInDown -ms-0.8 w-[100%] h-[35px] mt-0 ml-1 rounded-e bg-sky-300 px-6 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                    type="button"
+                    id="button-addon4"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                  >
+                    <span
+                      class="animate__animated animate__fadeInDown [&>svg]:h-5 [&>svg]:w-5"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+                id="mobile-menu-2"
+              >
+                <ul
+                  class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+                >
+                  <li>
+                    <a
+                      href="/"
+                      class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white animate__animated animate__fadeInDown"
+                      aria-current="page"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/calendar.html"
+                      class="animate__animated animate__fadeInDown block py-2 pl-3 text--700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >
+                      Calendar</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pr-4 pl-3 text-white-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="./pages/ai.html"
+                      class="animate__animated animate__fadeInDown block py-2 pr-4 pl-3 text-white-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                      >AI Helper</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/Self-Development.html"
+                      class="animate__animated animate__fadeInDown block py-2 pr-4 pl-3 text-white-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                      >Life-hacks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/Signup.html"
+                      class="animate__animated animate__fadeInDown block py-2 pr-4 pl-3 text--700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >
+                      Sign Up</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./pages/Login.html"
+                      class="animate__animated animate__fadeInDown block py-2 pr-4 pl-3 text-white-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                      >Log In</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <p id="title1">TODAY'S TOP STORIES</p>
+        <hr id="customLine" />
+        <div class="flex items-center justify-center">
+          <div class="flex flex-row p-4">
+            <img
+              src="https://www.nasa.gov/wp-content/uploads/2023/08/apptronik-nasa-featured-image.png"
+              alt="hormones"
+              class="photoH"
+            />
+            <div class="textOfIma">
+              <a
+                href="https://www.nasa.gov/centers-and-facilities/johnson/nasa-experience-enables-advance-of-small-businesss-humanoid-robot/"
+                id="anotherHor"
+              >
+                NASA's Humanoid Robots for Space Exploration</a
+              >
+              <p>
+                NASA is working on deploying humanoid robots to aid in space
+                exploration, such as assisting astronauts in performing
+                difficult or dangerous tasks. These robots are designed to
+                handle extreme environments, like Mars or the Moon, where human
+                presence is limited. Using AI and autonomous decision-making,
+                these robots will enhance safety and efficiency in future space
+                missions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr id="customLine2" />
+        <div class="miniQuestions">
+          <img
+            src="https://robotnik.eu/wp-content/uploads/2023/06/RB-WATCHER-LEICA-WEB3.jpg"
+            alt="habitImage"
+            id="habitImage"
+          />
+          <a
+            href="https://robotnik.eu/the-future-is-here-artificial-intelligence-robots-transforming-industries/"
+            ><p id="habitQuestion">Robots: Revolution in Robotics</p></a
+          >
+          <img
+            src="https://i.ytimg.com/vi/IzaaSIEDg7s/hqdefault.jpg"
+            alt="photoOfHarmony"
+            id="HormonalHarmonyImage"
+          />
+          <a
+            href="https://fooddigital.com/features/agribots-the-possible-future-development-of-food-harvesting"
+            ><p id="HormonalHarmony">
+              Agriculture: Robots Changing the Future of Farming
+            </p></a
+          >
+        </div>
+
+        <!-- <div id = 'BasicInfoDop'>
+        <h1>What is Dopamine</h1>
+        <h2>Dopamine: The Brain's Reward Chemical</h2>
+        <p>
+            Dopamine is a neurotransmitter that plays a key role in how we feel pleasure and reward. 
+            It's often called the "feel-good" chemical because it helps regulate mood, motivation, 
+            and reinforcement of behaviors. When you achieve something, whether it's eating a delicious 
+            meal or receiving a compliment, dopamine levels rise, making you feel good and encouraging 
+            you to repeat the behavior. It's also involved in movement and coordination, 
+            and its imbalance is linked to disorders such as Parkinson's disease and schizophrenia. 
+            Essentially, dopamine helps drive our actions and keeps us motivated!
+        </p>
+    </div>
+    <div>
+        <h1>What means unhealthy dopamine</h1>
+        <h2>Dopamine: The Brain's Reward Chemical</h2>
+        <p>
+            Dopamine, the brain's pleasure chemical, is essential for motivation and feeling good. 
+            However, when dopamine levels become imbalanced, it can lead to significant problems. 
+            Excessive stimulation, such as that from constant phone use and social media, 
+            can cause unhealthy dopamine spikes. These platforms often create short bursts of pleasure, 
+            leading to addictive behaviors and a cycle of craving more instant gratification. 
+            This overuse can result in feelings of anxiety, depression, and diminished ability to experience 
+            genuine satisfaction. On the flip side, low dopamine levels can cause apathy and lack of motivation. 
+            Maintaining a balanced dopamine system is crucial for mental health and well-being.
+        </p>
+    </div>
+    <div class = 'problems '>
+        <h1>Problem</h1>
+        <h2>Social Media</h2>
+        <p>
+            Social media platforms are designed to maximize engagement by providing frequent, 
+            immediate rewards—likes, comments, and shares. Each notification triggers a dopamine release, 
+            creating a cycle of instant gratification. This constant stimulation can lead to addiction-like behaviors, 
+            where individuals crave more frequent and intense interactions to maintain the dopamine-driven pleasure. 
+            Over time, this can contribute to decreased attention spans, increased anxiety, 
+            and a distorted sense of self-worth based on online validation.
+        </p>
+        <h2>Smartphones</h2>
+        <p>
+        Smartphones are a major source of dopamine-driven behavior. From endless scrolling through apps to receiving 
+        constant notifications, these devices keep users engaged with frequent dopamine hits. 
+        This can result in decreased productivity, disrupted sleep patterns, and impaired real-life social interactions. 
+        The constant need to check phones can also exacerbate feelings of anxiety and depression, 
+        as users become reliant on their devices for emotional regulation.
+        </p>
+        <h2>Drugs</h2>
+        <p>
+            Drugs, particularly stimulants like cocaine and methamphetamine, can cause extreme spikes in dopamine levels. 
+            This intense release of dopamine leads to euphoric highs, but also creates a strong cycle of addiction. 
+            The brain's natural dopamine system becomes desensitized over time, requiring higher doses to achieve the same
+            effect and leading to severe physical and psychological health issues. Long-term drug use can result in 
+            significant cognitive impairments, mental health disorders, and difficulty experiencing pleasure from 
+            everyday activities.
+        </p>
+        <h2>Overeating and Processed Foods</h2>
+        <p>
+            Consuming large quantities of high-sugar or high-fat processed foods can also disrupt dopamine levels. 
+            These foods often provide quick bursts of pleasure by triggering dopamine release, which can lead 
+            to cravings and overeating. The brain's reward system becomes overstimulated, reinforcing the cycle of 
+            seeking more sugary or fatty foods for pleasure. Over time, this can contribute to unhealthy weight gain, 
+            metabolic disorders, and a reduced ability to find satisfaction in healthier foods. Additionally, the constant
+             search for comfort through food can be linked to emotional eating and other psychological issues.
+        </p>
+    </div>
+     -->
+      </body>
+    </html>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

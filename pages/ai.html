@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI helper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .message {
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+
+      /* Bot message styles */
+      .bot-message {
+        background-color: #f0f0f0; /* Light gray background */
+        color: #000000; /* Black text color */
+        padding: 1rem;
+        border-radius: 0.5rem;
+        max-width: 28rem; /* Max width for the message bubble */
+        margin-right: auto; /* Align to the left */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div id="app" class="min-h-screen flex flex-col">
+      <!-- Chat Header -->
+      <header class="bg-blue-600 text-white p-4">
+        <!-- <h1 class="text-2xl">AI Chat</h1> -->
+        <a class="home-button" href="/">Home</a>
+      </header>
+
+      <!-- Chat Messages -->
+      <div id="messages" class="flex-1 p-4 overflow-y-auto">
+        <!-- Example message -->
+        <div class="mb-4">
+          <div class="bg-gray-200 p-4 rounded-lg max-w-lg">
+            <p>Hello! How can I help you today?</p>
+          </div>
+          <span class="text-gray-500 text-sm">AI Assistant</span>
+        </div>
+      </div>
+
+      <!-- Message Input -->
+      <footer class="bg-white p-4 flex items-center">
+        <input
+          id="messageInput"
+          type="text"
+          placeholder="Type a message"
+          class="flex-1 border border-gray-300 p-2 rounded-lg"
+        />
+        <button
+          id="sendButton"
+          class="bg-blue-600 text-white ml-4 px-4 py-2 rounded-lg"
+        >
+          Send
+        </button>
+      </footer>
+    </div>
+
+    <script type="module" src="./../script/ai.js"></script>
+  </body>
+</html>
